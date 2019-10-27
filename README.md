@@ -1,6 +1,8 @@
 # stackoverflow-slack-bot-docker
 
-A wrapper for [`stackoverflow-slack-bot`][stackoverflow-slack-bot] to automatically post new questions for a tag on StackOverflow to a Slack channel.
+A wrapper for [`stackoverflow-slack-bot`][stackoverflow-slack-bot] to automatically post new activity for a tag on StackOverflow to a Slack channel.
+
+Docker Hub: https://hub.docker.com/r/flotwig/stackoverflow-slack-bot
 
 ## Available Env Vars
 
