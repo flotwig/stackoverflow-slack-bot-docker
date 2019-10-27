@@ -9,4 +9,6 @@ WORKDIR /bot
 
 RUN npm i
 
-CMD npm run start
+COPY ./run.sh /bot/run.sh
+
+CMD ./run.sh
