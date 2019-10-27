@@ -15,9 +15,9 @@ Docker Hub: https://hub.docker.com/r/flotwig/stackoverflow-slack-bot
 ## Sample `docker run`
 
 ```shell
-docker --restart=always \
+docker run --restart=always \
   -e SO_INTERVAL=900 \
-  -v /my/config.json:/bot/config.json
+  -v /my/config.json:/bot/config.json \
   flotwig/stackoverflow-slack-bot:latest
 ```
 
