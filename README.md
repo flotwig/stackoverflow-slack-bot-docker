@@ -2,7 +2,7 @@
 
 A wrapper for [`stackoverflow-slack-bot`][stackoverflow-slack-bot] to automatically post new activity for a tag on StackOverflow to a Slack channel.
 
-Docker Hub: https://hub.docker.com/r/flotwig/stackoverflow-slack-bot
+GitHub Container Registry: https://github.com/flotwig/stackoverflow-slack-bot-docker/pkgs/container/stackoverflow-slack-bot
 
 ## Available Env Vars
 
@@ -20,14 +20,14 @@ docker run --restart=always \
   -e SO_INTERVAL=900 \
   -e SLACK_API_TOKEN=your-slack-api-token \
   -v /my/config.json:/bot/config.json \
-  flotwig/stackoverflow-slack-bot:latest
+  ghcr.io/flotwig/stackoverflow-slack-bot:latest
 ```
 
 ## Sample `docker-compose.yml`
 
 ```yml
   stackoverflow-slack-bot:
-    image: 'flotwig/stackoverflow-slack-bot:latest'
+    image: 'ghcr.io/flotwig/stackoverflow-slack-bot:latest'
     restart: always
     volumes:
     - /my/config.json:/bot/config.json
